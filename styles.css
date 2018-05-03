@@ -12,6 +12,10 @@ h1{
   background-color: #47476b;
   height: 150px
 }
+.TopThing-hidden{
+  visibility: hidden;
+  height: 150px
+}
 .logo{
   height: 250px;
   width: 250px;
