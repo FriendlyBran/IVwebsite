@@ -83,3 +83,7 @@ h1{
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.navbar {
+  background-color: #d9d9d9;
+}
