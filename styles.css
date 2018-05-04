@@ -87,6 +87,14 @@ h1{
 
 .navbar {
   background-color: #d9d9d9;
+  margin-bottom: 0px
+}
+
+.rectangle {
+  height: 10px;
+  width: 100%;
+  background-color: #555;
+  margin-bottom:15px
 }
 =======
 >>>>>>> f046099b5ce5e7c36c4c774ea199cfa0dbd104d8
