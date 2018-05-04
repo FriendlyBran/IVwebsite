@@ -100,14 +100,18 @@ h1 {
   height: 10px;
   width: 100%;
   background-color: #555;
-  margin-bottom:15px
+  margin-bottom:15px;
 }
 
 .btn-lg {
   border-radius: 0px;
+  position: fixed;
+  top: 212px;
+  left: 0;
 }
 
-/* sidenav for shop tap */
+
+/* sidenav for shop tap
 a:hover{
 	color: white;
 }
@@ -153,6 +157,7 @@ a:active{
     font-size: 36px;
     margin-left: 50px;
 }
+*/
 /*html sidenav for div button
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
