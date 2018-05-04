@@ -1,4 +1,8 @@
-h1{
+h1, h2, h3, h4, h5, h6, p, li, html, body {
+
+}
+
+h1 {
   text-align: right;
   font-size: 10em;
   margin-top: 0px;
@@ -9,16 +13,16 @@ h1{
   left: 220px;
   color: black;
 }
-.TopThing{
+.TopThing {
   background-color: #47476b;
   height: 150px;
   z-index: -1;
 }
-.TopThing-hidden{
+.TopThing-hidden {
   visibility: hidden;
   height: 150px
 }
-.logo{
+.logo {
   height: 250px;
   width: 250px;
   position: fixed;
@@ -95,6 +99,10 @@ h1{
   width: 100%;
   background-color: #555;
   margin-bottom:15px
+}
+
+.btn-lg {
+  border-radius: 0px;
 }
 =======
 >>>>>>> f046099b5ce5e7c36c4c774ea199cfa0dbd104d8
