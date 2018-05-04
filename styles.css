@@ -12,6 +12,7 @@ h1 {
   top: 4px;
   left: 220px;
   color: black;
+  z-index: 5;
 }
 .TopThing {
   background-color: #47476b;
@@ -32,7 +33,7 @@ h1 {
   padding: 0px;
   z-index: 0;
 }
-<<<<<<< HEAD
+
 .topnav {
     background-color: #d9d9d9;
     overflow: hidden;
@@ -98,11 +99,12 @@ h1 {
   height: 10px;
   width: 100%;
   background-color: #555;
-  margin-bottom:15px
+  margin-bottom:15px;
 }
 
 .btn-lg {
   border-radius: 0px;
+  position: fixed;
+  top: 212px;
+  left: 0;
 }
-=======
->>>>>>> f046099b5ce5e7c36c4c774ea199cfa0dbd104d8
