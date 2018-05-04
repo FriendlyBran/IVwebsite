@@ -59,7 +59,25 @@
     </nav>
 
   </div>
-  <div class="rectangle"></div>
-  <button type="button" class="btn btn-primary btn-lg">Large button</button>
+    <div class="rectangle"></div>
+    <button type="button" class="btn btn-primary btn-lg" onclick="openNav()">Large button</button>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="store.html">Shop</a>
+      <a href="#">Women's</a>
+      <a href="#">Men's</a>
+      <a href="#">Little People's</a>
+    </div>
+    <footer>
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.display = "block";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.display = "none";
+      }
+      </script>
+    </footer>
   </body>
 </html>

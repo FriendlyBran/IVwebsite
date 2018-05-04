@@ -111,7 +111,7 @@ h1 {
 }
 
 
-/* sidenav for shop tap
+/* sidenav for shop tap*/
 a:hover{
 	color: white;
 }
@@ -127,12 +127,12 @@ a:active{
 
 .sidenav {
     display: none;
-    height: 100%;
-    width: 267px;
+    height: 80.2%;
+    width: 300px;
     position: fixed;
     z-index: 1;
-    top: 0;
     left: 0;
+    bottom: 0;
     background-color: #111;
     overflow-x: hidden;
     padding-top: 60px;
@@ -157,23 +157,3 @@ a:active{
     font-size: 36px;
     margin-left: 50px;
 }
-*/
-/*html sidenav for div button
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Python</a>
-  <a href="#">C#</a>
-  <a href="#">Web Dev</a>
-  <a href="#">Graphic Design</a>
-</div>
-*//*script for sidenav, place under footer
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.display = "none";
-}
-</script>
-*/
