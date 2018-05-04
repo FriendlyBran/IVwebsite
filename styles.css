@@ -1,17 +1,19 @@
 h1, h2, h3, h4, h5, h6, p, li, html, body {
-
+  font-family: 'PT Sans', sans-serif;
 }
 
 h1 {
+  font-weight: bold;
   text-align: right;
   font-size: 10em;
   margin-top: 0px;
   padding-top: 0px;
   letter-spacing: 3px;
   position: fixed;
-  top: 4px;
+  top: -10px;
   left: 220px;
   color: black;
+  z-index: 5;
 }
 .TopThing {
   background-color: #47476b;
@@ -23,16 +25,16 @@ h1 {
   height: 150px
 }
 .logo {
-  height: 250px;
-  width: 250px;
+  height: 240px;
+  width: 240px;
   position: fixed;
-  top: -53px;
+  top: -42px;
   left: 0;
   margin: 0px;
   padding: 0px;
   z-index: 0;
 }
-<<<<<<< HEAD
+
 .topnav {
     background-color: #d9d9d9;
     overflow: hidden;
@@ -104,5 +106,69 @@ h1 {
 .btn-lg {
   border-radius: 0px;
 }
-=======
->>>>>>> f046099b5ce5e7c36c4c774ea199cfa0dbd104d8
+
+/* sidenav for shop tap */
+a:hover{
+	color: white;
+}
+a:link{
+	color:rgb(71, 159, 247);
+}
+a:visited{
+	color:rgb(71, 159, 247);
+}
+a:active{
+	color:white;
+}
+
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 267px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/*html sidenav for div button
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Python</a>
+  <a href="#">C#</a>
+  <a href="#">Web Dev</a>
+  <a href="#">Graphic Design</a>
+</div>
+*//*script for sidenav, place under footer
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+*/
