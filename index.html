@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Iron Viking: Home</title>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Iron Viking: Home</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
 
   <div class="TopThing">
-    <h1>Live Unafraid / Die Strong</h1>
-    <img class = "logo" src="IVLogo.svg" alt="Iron Viking Logo" />
+    <h1 class="bigTitle">Live Unafraid / Die Strong</h1>
+    <img class="logo" src="IVLogo.svg" alt="Iron Viking Logo" />
   </div>
   <div class="THINGY">
     <nav class="navbar navbar-default">
@@ -36,40 +37,85 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link2</a></li>
-            <li><a href="#">Link3</a></li>
-            <li><a href="#">Link4</a></li>
-            <li><a href="#">Link5</a></li>
-            <li><a href="#">Link6</a></li>
+            <li><a href="Ambassador.html">Ambassadors</a></li>
+            <li><a href="AboutMe.html">About the CEO</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Workout Tips<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
+                <li><a href="#">Workout Plan</a></li>
+                <li><a href="#">Macro Tips</a></li>
                 <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
               </ul>
             </li>
           </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
     </nav>
 
   </div>
-    <div class="rectangle"></div>
-    <button type="button" class="btn btn-primary btn-lg" onclick="openNav()">Large button</button>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="store.html">Shop</a>
-      <a href="#">Women's</a>
-      <a href="#">Men's</a>
-      <a href="#">Little People's</a>
+  <div class="rectangle"></div>
+  <button type="button" class="btn btn-primary btn-lg" onclick="openNav()">Store</button>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="store.html">Shop</a>
+    <a href="">Women's</a>
+    <a href="#">Men's</a>
+    <a href="#">Little People's</a>
+  </div>
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="manlyMan.jpg" alt="asdfasd" style="width:100%">
+      <div class="text">Caption Text</div>
     </div>
-    <footer>
-      <script>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="Thing.jpg" alt="asdfg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="women.png" alt="aksd" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <footer>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2500); // Change image every 2 seconds
+      }
+
       function openNav() {
         document.getElementById("mySidenav").style.display = "block";
       }
@@ -77,7 +123,8 @@
       function closeNav() {
         document.getElementById("mySidenav").style.display = "none";
       }
-      </script>
-    </footer>
-  </body>
+    </script>
+  </footer>
+</body>
+
 </html>
