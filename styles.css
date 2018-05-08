@@ -19,6 +19,9 @@ body{
   width: 600px;
   color: black;
 }
+.container2{
+
+}
 
 .bigTitle {
   font-weight: bold;
@@ -53,12 +56,30 @@ body{
   z-index: 0;
 }
 
+
+.navbar {
+  margin-bottom: 50px;
+  border-radius: 0;
+}
+
+
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+
+
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
 .topnav {
     background-color: #d9d9d9;
     overflow: hidden;
 }
 
-/* Style the links inside the navigation bar */
+
 .topnav a {
     float: left;
     display: block;
@@ -71,21 +92,21 @@ body{
     z-index: 1;
 }
 
-/* Change the color of links on hover */
+
 .topnav a:hover {
     background-color: black;
     color: white;
     z-index: 1;
 }
 
-/* Add an active class to highlight the current page */
+
 .active {
     background-color: #47476b;
     color: white;
     z-index: 1;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
+
 .topnav .icon {
     display: none;
     z-index: 1;
@@ -129,7 +150,7 @@ body{
 }
 
 
-/* sidenav for shop tap*/
+
 a:hover{
 	color: white;
 }
@@ -177,19 +198,19 @@ a:active{
 }
 * {box-sizing:border-box}
 
-/* Slideshow container */
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
+
 .mySlides {
     display: none;
 }
 
-/* Next & previous buttons */
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -208,13 +229,12 @@ a:active{
   top: 150px;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -230,7 +250,7 @@ a:active{
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -239,7 +259,7 @@ a:active{
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -255,12 +275,18 @@ a:active{
   background-color: #717171;
 }
 
-/* Fading animation */
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+}
+.form-group{
+  padding-top: 20px;
+}
+.row{
+  padding-top: 20px;
 }
 
 @-webkit-keyframes fade {
@@ -271,4 +297,22 @@ a:active{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media only screen and (max-width: 767px){
+  .bigTitle{
+    font-size: 5em;
+  }
+
+}
+@media only screen and (max-width: 479px){
+  .bigTitle{
+    display: none;
+  }
+  .logo{
+    position: fixed;
+    top: -42px;
+    left: 70px;
+
+  }
 }
